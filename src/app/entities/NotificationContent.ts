@@ -19,6 +19,5 @@ export class NotificationContent {
         this.content = content;
     }
 
-
 }
 

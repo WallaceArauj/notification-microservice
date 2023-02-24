@@ -1,0 +1,16 @@
+import { SendNotification } from "./send-notification"
+
+describe('Send Notification', () => {
+    it('Should be able to send a notifcation', async () =>{
+        const sendNotification = new SendNotification()
+
+        const {notification} = await sendNotification.execute({
+            content: 'This is a Notification',
+            category: 'social',
+            recipientId: 'example-recipient-id'
+        });
+
+        expect(notification).toBeTruthy();
+
+    });
+})
