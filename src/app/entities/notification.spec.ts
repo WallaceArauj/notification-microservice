@@ -1,5 +1,5 @@
-import { NotificationContent } from "./NotificationContent";
-import { Notification } from "./Notification";
+import { NotificationContent } from "../entities/NotificationContent";
+import { Notification } from "../entities/Notification";
 
 describe('Notification', () => {
 
